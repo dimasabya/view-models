@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block post %}
+    
+    {% for Posts in post  %}
+    <div style="background-color: beige;">
+        <table style="text-align: center;">
+            <thead>
+                <h1>{{Posts.judul}}</h1>
+            </thead>
+            <tbody>
+                <p>{{Posts.body}}</p>
+            </tbody>
+        </table>
+    </div>
+   
+    {% endfor %}
+        
+{% endblock post %}
+    
